@@ -2,18 +2,19 @@ import sys
 import webbrowser
 
 urls = {
-    "Work" : ["https://outlook.office.com", "https://calendar.google.com/calendar", "https://www.slack.com"],
-    "Social" : ["https://www.facebook.com", "https://www.instagram.com", "https://www.twitter.com"],
-    "Entertainment" : ["https://www.netflix.com","https://www.youtube.com", "https://www.disneyplus.com"]
-}
+    "Vanilla+ Production Server *PMF1SV+" : ["",""]
+    "Vanilla Production Server *PMF1SV" : ["",""]
+    "Vanilla+ Freinds Server *FMF1SV+" : ["",""]
+    "Vanilla Freinds Server *FMF1SV" : ["",""]
+} # production(P)/friends(F), bedrock(B)/java(J)/multiple(M), floodgate(F)/none(N), #, server(S)/world(W), vanilla(V)/vanilla+(V+)/Modded(Java only, M)/not vanilla(P)
 
 
 def open_websites():
-    print("Welcome to the website automator!")
-    print("Here are the categories you can choose from:")
+    print("Welcome To The Server Dashboard! ")
+    print("Here Are The Packs You Can Choose From: ")
     for category in urls:
         print(category)
-    category = input("Which category would you like to open? ")
+    category = input("Which Pack Would You Like To Download? ")
     if category in urls:
         for url in urls[category]:
             webbrowser.open(url)
